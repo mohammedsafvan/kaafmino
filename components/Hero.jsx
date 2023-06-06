@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div id="home" className="relative overflow-hidden dark  ">
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10  ">
-        <div className="grid justify-items-center">
+        <div className="grid h-auto w-auto justify-items-center">
           <Image
             src={"/kaafmino logo.svg"}
             height={300}
@@ -18,7 +18,7 @@ const Hero = () => {
             KAAFMINO
           </h1>
 
-          <p className="font-poppins text-xl text-gray-600 dark:text-gray-300">
+          <p className="font-poppins text-xl text-gray-600 dark:text-gray-500">
             ENTERPRISES LLP
           </p>
 

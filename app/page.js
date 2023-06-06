@@ -1,13 +1,12 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import NavBar from "@/components/NavBar";
 import WeDoCard from "@/components/WeDoCard";
 import { whatWeDo } from "@/helpers/data";
 import { useEffect } from "react";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-import NewNavBar from "@/components/NewNavBar";
+import NavBar from "@/components/NavBar";
 import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
@@ -21,9 +20,9 @@ export default function Home() {
         <meta name="description" content="Kaafmino LLP" />
         <link rel="icon" href="favicon.png" />
       </Head>
-      <div className="dark bg-slate-900">
-        <NewNavBar />
 
+      <div className="dark bg-slate-900">
+        <NavBar />
         <div id="scrollspy">
           <Hero />
           {/*  End of hero */}
@@ -42,6 +41,7 @@ export default function Home() {
                   title={element.name}
                   imgUrl={element.imgUrl}
                   desc={element.desc}
+                  path={element.path}
                   key={index}
                 />
               ))}

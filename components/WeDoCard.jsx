@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const WeDoCard = ({ title, imgUrl, desc }) => {
+const WeDoCard = ({ title, imgUrl, desc,path }) => {
   return (
     <a
       className="group rounded-xl border hover:border-gray-300 dark:border-gray-700 dark:hover:border-gray-600 overflow-hidden hover:scale-105 transition pb-4 shadow-md "
-      href="/tech-solutions "
+      href={path}
     >
       <div className="">
         <div className=" relative rounded-xl overflow-hidden w-full  h-44">
@@ -15,6 +15,7 @@ const WeDoCard = ({ title, imgUrl, desc }) => {
             height={400}
             alt={title}
             quality={90}
+            loading={"lazy"}
           />
         </div>
         <div className="grow mt-2 mx-4">
